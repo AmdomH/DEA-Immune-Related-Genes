@@ -1,6 +1,6 @@
-# RNA-seq Count Data Analysis for Different Types of Cancer
+# RNA-seq Count Data Analysis for Pediatric Brain Tumors
 
-This repository contains an R script for analyzing RNA-seq count data to investigate different types of cancer. The main goal of this project is to use various computational tools to detect differentially expressed genes among various cancer types, identify immune-related genes, and create a network for gene-gene interaction.
+This repository contains an R script designed for the comprehensive analysis of RNA-seq count data related to different types of pediatric brain tumors including ATRT, Ependymoma, Glioblastoma, Glioma, Medulloblastoma, and Craniopharyngioma. The goal of this project is to identify immune-related gene expressions and discover their disparities among these tumor types.
 
 ## Table of Contents
 
@@ -12,30 +12,30 @@ This repository contains an R script for analyzing RNA-seq count data to investi
 
 ## Introduction
 
-RNA-seq analysis has become an essential tool in understanding gene expression levels in various diseases, especially cancer. This project aims to comprehensively analyze the RNA-seq count data for different types of cancer, identify differentially expressed genes, and infer the underlying gene-gene interaction network.
+RNA-seq analysis is a powerful tool for understanding gene expression variations across different diseases, in this case, pediatric brain tumors. This project conducts a differential expression analysis to investigate the disparities in immune-related gene expressions among different types of pediatric brain tumors.
 
 ## Preparation and Dependencies
 
-This project utilizes several R packages. You need to ensure these packages are installed before running the script. The primary packages used include `DESeq2`, `tidyverse`, `WGCNA`, and a few others for visualization and data manipulation.
+This analysis utilizes various R packages, including `DESeq2`, `tidyverse`, and `WGCNA`, among others. Ensure these packages are installed before running the script.
 
 ## Data Analysis Workflow
 
-1. **Data Loading and Preparation**: The script begins by loading RNA-seq count data, metadata, and gene-related information. We filter the data to focus only on immune-related genes.
+1. **Data Loading and Preparation**: We load the RNA-seq count data, metadata, and gene-related information, focusing on immune-related genes for our study.
 
-2. **Exploratory Data Analysis**: After data preparation, an exploratory data analysis is conducted. Here, we normalize the data and perform principal component analysis (PCA) to reduce dimensionality and visualize our data.
+2. **Exploratory Data Analysis**: The data is normalized and principal component analysis (PCA) is performed for dimensionality reduction and data visualization.
 
-3. **Differential Gene Expression Analysis**: We perform differential gene expression analysis using DESeq2. Genes that show significant differences in expression between different types of cancer are identified.
+3. **Differential Gene Expression Analysis**: Using DESeq2, we conduct a differential gene expression analysis to identify the genes that show significant expression differences across the tumor types.
 
-4. **Weighted Gene Co-expression Network Analysis (WGCNA)**: This is a crucial step where we create a network of gene-gene interactions. WGCNA is a method for finding clusters (modules) of highly correlated genes. For each module, we calculate a module eigengene or 'representative' gene expression profile.
+4. **Weighted Gene Co-expression Network Analysis (WGCNA)**: We identify clusters (modules) of highly correlated genes and compute a module eigengene for each module, representing a 'typical' gene expression profile within the module.
 
-5. **Module-Trait Associations**: We associate the identified modules with clinical traits. This step can provide insights into the genes that might be critical for different cancer types.
+5. **Module-Trait Associations**: The modules identified are associated with clinical traits to identify potential gene sets that might be critical in the studied tumor types.
 
-6. **Intramodular Analysis**: Finally, we perform an intramodular analysis to identify potential driver genes within the identified modules.
+6. **Intramodular Analysis**: This final step identifies potential driver genes within the modules identified, providing directions for future research.
 
 ## Running the Analysis
 
-Before running the script, make sure you have the required data files and the R packages installed. Adjust the script to match your specific data file names and directories. Run the script in R, RStudio, or any R-compatible interface.
+Ensure you have the necessary data files and R packages installed before running the script. Adjust the file names and directories as per your dataset. You can run the script in R, RStudio, or any R-compatible interface.
 
 ## Conclusion
 
-The end goal of this project is to utilize the power of computational biology to contribute to our understanding of cancer. By identifying key genes and gene networks associated with different types of cancer, we can provide valuable insights into the underlying biological mechanisms. This can potentially aid in developing novel therapeutic strategies or improving existing ones.
+By identifying key genes and gene networks associated with different types of pediatric brain tumors, this project contributes to understanding the underlying biological mechanisms of these malignancies. This understanding could potentially aid in the development of new therapeutic strategies and improvement of existing ones.
