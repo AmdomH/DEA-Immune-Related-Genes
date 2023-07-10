@@ -19,7 +19,7 @@ library(gridExtra)
 library(CorLevelPlot)
 
 #Set working directory
-setwd("C:/Users/aweldeab/surfdrive3/Documents/Data source files")
+setwd("C:/Data")
 #Load count data and Meta data
 # Load count_data from .Rdata file
 load("count_data.Rdata")
