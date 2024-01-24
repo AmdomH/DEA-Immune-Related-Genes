@@ -1,4 +1,4 @@
-# RNA-seq Count Data Analysis for Pediatric Brain Tumors
+# RNA-seq Count Data Analysis in Pediatric Brain Tumors
 
 This repository contains an R script designed for the comprehensive analysis of RNA-seq count data related to different types of pediatric brain tumors including ATRT, Ependymoma, Glioblastoma, Glioma, Medulloblastoma, and Craniopharyngioma. The goal of this project is to identify immune-related gene expressions and discover their disparities among these tumor types.
 
